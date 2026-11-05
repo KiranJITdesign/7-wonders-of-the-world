@@ -1,11 +1,18 @@
-🌆 Namma Bengaluru GTA
+<div align="center">
 
-Bengaluru: City of Dreams
+# 🌆 Namma Bengaluru GTA
+### Bengaluru: City of Dreams
 
-https://img.shields.io/badge/3D_Engine-Three.js-ec4899?style=for-the-badge&logo=threedotjs&logoColor=white
-https://img.shields.io/badge/Physics-Cannon--es-6366f1?style=for-the-badge
-https://img.shields.io/badge/Build-Vite-646cff?style=for-the-badge&logo=vite&logoColor=white
-https://img.shields.io/badge/Audio-Web_Audio_API-orange?style=for-the-badge
+<a href="https://threejs.org/"><img src="https://img.shields.io/badge/3D_Engine-Three.js-ec4899?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" /></a>
+<a href="https://pmndrs.github.io/cannon-es/"><img src="https://img.shields.io/badge/Physics-Cannon--es-6366f1?style=for-the-badge" alt="Cannon-es" /></a>
+<a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Build-Vite-646cff?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API"><img src="https://img.shields.io/badge/Audio-Web_Audio_API-orange?style=for-the-badge" alt="Web Audio API" /></a>
+
+*An open-world 3D action-adventure game set in the bustling streets of Bengaluru. Drive BMTC buses, dodge traffic, hijack vehicles, and trigger high-speed police chases — all in your browser.*
+
+[Features](#-features) • [Controls](#-controls) • [Vehicles & Landmarks](#-vehicles--landmarks) • [How It Works](#-how-it-works) • [Run It](#-run-it) • [Troubleshooting](#-troubleshooting) • [Notes](#-notes)
+
+</div>
 
 An open-world 3D action-adventure game set in the bustling streets of Bengaluru. Drive BMTC buses, dodge traffic, hijack vehicles, and trigger high-speed police chases — all in your browser.
 
