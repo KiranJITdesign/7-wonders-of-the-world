@@ -1,107 +1,159 @@
-<div align="center">
+🌆 Namma Bengaluru GTA
 
-# 🌎 Seven Wonders in 3D
-### Walk Around the Seven Wonders of the World in Your Browser
+Bengaluru: City of Dreams
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-22c55e?style=for-the-badge&logo=github&logoColor=white)](https://kiranjitdesign.github.io/7-wonders-of-the-world/)
-[![Three.js](https://img.shields.io/badge/3D_Engine-Three.js_r128-ec4899?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
-[![HTML5](https://img.shields.io/badge/App-Single_File_HTML-e34f26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![No Build](https://img.shields.io/badge/Setup-No_Install_or_Build-6366f1?style=for-the-badge)](#-run-it)
+https://img.shields.io/badge/3D_Engine-Three.js-ec4899?style=for-the-badge&logo=threedotjs&logoColor=white
+https://img.shields.io/badge/Physics-Cannon--es-6366f1?style=for-the-badge
+https://img.shields.io/badge/Build-Vite-646cff?style=for-the-badge&logo=vite&logoColor=white
+https://img.shields.io/badge/Audio-Web_Audio_API-orange?style=for-the-badge
 
-*An interactive 3D explorer for the seven wonders of the world. Pick a wonder, walk around it with the keyboard, zoom in for a closer look, and read quick travel details for each one.*
+An open-world 3D action-adventure game set in the bustling streets of Bengaluru. Drive BMTC buses, dodge traffic, hijack vehicles, and trigger high-speed police chases — all in your browser.
 
-[Live Demo](https://kiranjitdesign.github.io/7-wonders-of-the-world/) • [Features](#-features) • [Controls](#-controls) • [The Wonders](#-the-wonders) • [How It Works](#-how-it-works) • [Run It](#-run-it) • [Notes](#-notes)
-
-</div>
+Features • Controls • Vehicles & Landmarks • How It Works • Run It • Troubleshooting • Notes
 
 ---
 
-## ✨ Features
+✨ Features
 
-- 🏛️ **Seven 3D scenes:** Each wonder is built from simple shapes in Three.js.
-- 🚶 **Walk around:** Move around each wonder with `W` `A` `S` `D`.
-- 🖱️ **Look and zoom:** Drag to look around and scroll to zoom in for a closer look.
-- 🌗 **Day and night view:** Switch to night to see stars and a moon.
-- 🧳 **Travel details panel:** Every wonder has a details panel you can close with ✕, and a ✓ appears in the menu for wonders you have visited.
-- 📸 **Go to photo spot:** One button jumps to each wonder's best viewpoint.
-
----
-
-## 🎮 Controls
-
-| Action | Input |
-| :--- | :--- |
-| Choose a wonder | Menu, or keys `1` to `7` |
-| Move | `W` `A` `S` `D` |
-| Go down / up | `Q` / `E` |
-| Sprint | `Shift` |
-| Look around | Click and drag |
-| Zoom | Mouse wheel |
-| Day / night | `N`, or the Day / Night switch |
+· 🏙️ Authentic Bengaluru Map: Dr. B.R. Ambedkar Road, Malleshwaram, Silk Board & Hebbal flyovers, Cubbon Park, fuel stations, and tech parks.
+· 🚌 Iconic Drivable Vehicles: Sedans, sports cars, auto-rickshaws, and BMTC buses (Routes 335E & 500D).
+· 🛞 Dynamic Vehicle Physics: Realistic acceleration, drift/braking, reverse gear, weight distribution, and steering.
+· 🤼 Pedestrian AI & Retaliation: Bump into residents and they'll fight back with street melee combat.
+· 🚨 5-Star Wanted System: Smash barricades or civilians to alert Karnataka Police — pursuit AI, flashers, and sirens included.
+· 💀 Classic "WASTED" Screen: Triggers on fatal impacts or zero health.
+· 🗺️ Interactive City Map: Press M to see live GPS markers, landmarks, and zoom across the district.
+· 🔊 Synthetic 3D Audio: Custom-synthesized horns, RPM, crashes, and Doppler-effect sirens — no external audio files.
 
 ---
 
-## 🌍 The Wonders
+🎮 Controls
 
-| # | Wonder | Ideal booking window | Essential gear | Prime photo spot |
-| :---: | :--- | :--- | :--- | :--- |
-| 1 | **Great Wall** | 1–2 weeks ahead | Sturdy hiking shoes | Mutianyu Watchtower 20 |
-| 2 | **Petra** | Look into Jordan Pass | Flashlight / Headlamp | High Place of Sacrifice |
-| 3 | **Christ the Redeemer** | 2–4 weeks ahead | Sunglasses / Hat | Base of the statue pedestal |
-| 4 | **Machu Picchu** | 3–6 months ahead | Passport (required for entry) | Watchman’s Hut |
-| 5 | **Chichén Itzá** | Day-of available | Biodegradable sunscreen | El Castillo front plaza |
-| 6 | **Colosseum** | 30 days ahead (strict) | Shoulder/knee coverings | Upper tier overlooking the arena |
-| 7 | **Taj Mahal** | 1–3 days ahead | Shoe covers (provided) | Yamuna riverbank (Mehtab Bagh) |
+Action Keyboard Touch / On-Screen
+Move / Drive W A S D or Arrow Keys ▲ ▼ ◀ ▶
+Sprint Shift —
+Jump / Handbrake Space HANDBRAKE
+Enter / Exit Vehicle E [E] DRIVE / [EXIT]
+Enlarge City Map M Tap Minimap
+Horn H 📢 HORN
+Camera View (1st / 3rd person) C —
+Pause Esc —
 
 ---
 
-## 🧱 How It Works
+🚗 Vehicles & Landmarks
+
+Vehicle Class Top Speed Horn Notes
+Sedan Civilian Moderate Standard Great all-rounder
+Sports Car Performance High Sharp beep Best for police chases
+Auto-Rickshaw Three-wheeler Low Classic auto horn Tight turning radius
+BMTC Bus 335E Transit Low Pneumatic air horn Heavy, high momentum
+BMTC Bus 500D Transit Low Pneumatic air horn Longest vehicle in the game
+
+Landmark Type Best Moment to Visit
+Cubbon Park Green space Walk around on foot
+Silk Board Flyover Elevated road High-speed drift challenge
+Hebbal Flyover Elevated road Night lights view
+Malleshwaram Neighborhood Pedestrian encounters
+Tech Park Commercial zone Fast traffic to weave through
+
+---
+
+🧱 How It Works
 
 ```mermaid
 graph TD
-    subgraph Browser ["Browser (index.html, single file)"]
-        UI["Menu, details panel, Day / Night switch"]
-        Input["Keyboard and mouse controls"]
-        Scenes["Seven Three.js scenes built from basic shapes"]
+    subgraph Browser ["Browser (index.html + HUD)"]
+        UI["Glassmorphism HUD, Minimap & Speedometer"]
+        Input["WASD, Touch, E, H, M, C"]
+        Audio["Procedural Web Audio (horns, RPM, sirens)"]
+        Renderer["Three.js 3D WebGL Viewport"]
     end
 
-    subgraph CDN ["CDN (internet connection needed)"]
-        Three["Three.js r128"]
-        Fonts["Web fonts"]
+    subgraph Engine ["Game Engine (Vite)"]
+        Physics["Cannon-es Physics (Suspension & Collisions)"]
+        City["Bengaluru Map (Roads, Flyovers, Buildings)"]
+        TrafficAI["Vehicle AI (Buses, Autos, Cars)"]
+        PedAI["Pedestrian AI (Walk & Melee)"]
+        Police["Wanted System (1–5 Stars, Pursuit)"]
     end
 
-    Three --> Scenes
-    Fonts --> UI
-    UI -->|"Pick a wonder or photo spot"| Scenes
-    Input -->|"W A S D, drag, scroll"| Scenes
+    Input --> Physics
+    Input --> UI
+    Physics -->|"Body transforms"| Renderer
+    City -->|"Meshes & lighting"| Renderer
+    TrafficAI -->|"Pathfinding"| Physics
+    PedAI -->|"Aggro detection"| Physics
+    Police -->|"Pursuit AI"| Physics
+    Physics -->|"Speed, impacts, sirens"| Audio
+    Physics -->|"Coords & speed"| UI
 ```
 
 ---
 
-## 🚀 Run It
+🚀 Run It
 
-No install or build step is needed.
+Prerequisites: Node.js v16+, npm, and a WebGL2-compatible browser.
 
-1. Download or clone this repo:
+1. Clone the repo:
    ```bash
-   git clone https://github.com/KiranJITdesign/7-wonders-of-the-world.git
-   cd 7-wonders-of-the-world
+   git clone https://github.com/KiranJITdesign/nama-banglore-gta-game.git
+   cd nama-banglore-gta-game
    ```
-2. Open `index.html` in a modern browser.
+2. Install and launch:
+   ```bash
+   npm install
+   npm run dev
+   ```
+3. Open http://localhost:3000/ (or the URL printed in your terminal).
 
-> 💡 An internet connection is needed because Three.js and the fonts load from a CDN.
+Production build:
 
-Or skip setup and open the **[live demo](https://kiranjitdesign.github.io/7-wonders-of-the-world/)**.
+```bash
+npm run build
+npm run preview
+```
 
 ---
 
-## 🧰 Built With
+📂 Repository Structure
 
-- [Three.js](https://threejs.org/) (r128)
-- Plain HTML, CSS and JavaScript in a single file
+```
+nama-banglore-gta-game/
+├── public/              # Static assets, textures, UI icons
+├── src/
+│   ├── audio/           # Procedural Web Audio synthesizers
+│   ├── entities/        # Player, Pedestrian, Vehicle classes
+│   ├── physics/         # Cannon-es world & colliders
+│   ├── world/           # Three.js map, roads, buildings, lighting
+│   ├── ui/              # Canvas HUD, cockpit, minimap
+│   └── main.js          # Main game loop
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 ---
 
-## 📝 Notes
+🧰 Built With
 
-The models are stylised and made from basic geometry, not photoreal scans. Travel details such as booking windows are general guidance, so check the official sites before you go.
+· Three.js — PBR 3D rendering
+· Cannon-es — Rigid body physics
+· Vite — Dev server & bundler
+· Web Audio API — Procedural sound
+· HTML5 Canvas — HUD and minimap
+
+---
+
+🧰 Troubleshooting
+
+Problem Fix
+Low FPS / Stuttering Enable Hardware Acceleration in browser settings (chrome://settings/system).
+No sound Click the canvas once — browsers block audio until user interaction.
+Physics clipping / falling through map Reload the scene; check src/main.js substep settings.
+
+---
+
+📝 Notes
+
+The map is a stylized tribute to Bengaluru, not a photoreal replica. Runs best on desktop GPUs with WebGL2 support. Performance can be tuned in src/main.js.
